@@ -5,13 +5,13 @@ const UserProfile = (props) => {
     <div
       style={{
         border: '1px solid gray',
-        padding: '15px',
-        margin: '15px',
+        padding: '10px',
+        margin: '10px',
         borderRadius: '8px',
         backgroundColor: '#f9f9f9'
       }}
     >
-      <h2 style={{ color: 'blue', marginBottom: '5px' }}>
+      <h2 style={{ color: 'blue' }}>
         {props.name}
       </h2>
 
@@ -23,5 +23,4 @@ const UserProfile = (props) => {
     </div>
   );
 };
-
 export default UserProfile;
