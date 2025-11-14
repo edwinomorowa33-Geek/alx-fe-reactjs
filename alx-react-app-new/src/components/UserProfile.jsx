@@ -1,13 +1,4 @@
 // src/components/UserProfile.jsx
-const UserProfile = (props) => {
-  return (
-    <div className="user-profile">
-      <h2>{props.name}</h2>
-      <p>Age: {props.age}</p>
-      <p>Bio: {props.bio}</p>
-    </div>
-  );
-};
 
 const UserProfile = (props) => {
   return (
@@ -20,7 +11,9 @@ const UserProfile = (props) => {
         backgroundColor: '#f9f9f9'
       }}
     >
-      <h2 style={{ color: 'blue', marginBottom: '5px' }}>{props.name}</h2>
+      <h2 style={{ color: 'blue', marginBottom: '5px' }}>
+        {props.name}
+      </h2>
 
       <p>
         Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span>
@@ -32,4 +25,3 @@ const UserProfile = (props) => {
 };
 
 export default UserProfile;
-
