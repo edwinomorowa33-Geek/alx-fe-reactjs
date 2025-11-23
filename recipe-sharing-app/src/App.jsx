@@ -3,10 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddRecipeForm from "./components/AddRecipeForm";
 import RecipeList from "./components/RecipeList";
 import RecipeDetails from "./components/RecipeDetails";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
-    <Router> {/* ALX expects Router here */}
+    <Router>
       <div>
         <h1>Recipe Sharing App</h1>
 
@@ -16,6 +17,7 @@ function App() {
             element={
               <>
                 <AddRecipeForm />
+                <SearchBar />
                 <RecipeList />
               </>
             }
